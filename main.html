@@ -4,9 +4,57 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Signup Form Car</title>
 </head>
 
 <body>
+	<form method="post" action="#">
+		<div>
+		<label for="name">Name :</label>
+		<input type="text" id="name" name="Name"placeholder="Name" required>
+		</div>
+		<div>
+			<label for="email"> Email :</label>
+			<input type="email" name="Email" id="email" placeholder="Email" required>
+		</div>
+		<div>
+			<label for="gender_m">M</label>
+			<input type="radio" name="Gender" id="gender_m">
+			<label for="gender_f">F</label>
+			<input type="radio" name="Gender" id="gender_f">
+		</div>
+		<div>
+			<label for="cars">Car Brands :</label>
+			<select name="Car Brands" id="cars" required>
+				<option value="" disabled selected>--Please choose an option--</option>
+				<option value="Toyota">Toyota</option>
+				<option value="HUNDAI">HUNDAI</option>
+				<option value="MARUTI SUZUKI">MARUTI SUZUKI</option>
+				<option value="BMW">BMW</option>
+				<option value="AUDI">AUDI</option>
+		</div> 
+	   <div>
+		  <label for="age"> Age :</label>
+		 <input type="number" name ="Age" id="age" placeholder="Age" required>
+	   </div>
+		<div>
+			<label for="age">DOB :</label>
+			<input type ="date" name="DOB"id="age" required>
+		</div>
+		<div>
+			<label for="tel">Phone Number :</label>
+			<input type="tel"name="Phone Number" id="tel" placeholder="xxx-xxx-xxxx">
+		</div>
+		<div>
+			<label for="password">Password :</label>
+			<input type="password" name ="Password" id ="password" placeholder="Password" required>
+		</div>
+		<div>
+			<label for="tos">TOS :</label>
+			<input type ="checkbox" name ="TOS" id="tos" required>
+		</div>
+		<button type="submit"> submit</button>
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
